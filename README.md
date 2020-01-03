@@ -132,3 +132,9 @@ The things the grading code is looking for are:
 2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
 
 
+# References
+
+[Particle Filter in Robotics.](http://robots.stanford.edu/papers/thrun.pf-in-robotics-uai02.pdf)
+[Vehicle tracking using projective particle filter.](https://www.researchgate.net/publication/46300863_Vehicle_Tracking_Using_Projective_Particle_Filter)
+[Overlapped Vehicle Tracking via Enhancement of Particle Filter with Adaptive Resampling Algorithm.](http://ijssst.info/Vol-12/No-3/paper7.pdf)
+[Unscented Kalman filters and Particle Filter methods for nonlinear state estimation](http://ac.els-cdn.com/S2212017313006427/1-s2.0-S2212017313006427-main.pdf?_tid=e36cf932-5fd6-11e7-b1c1-00000aab0f27&acdnat=1499076400_c257df4f75a916408abbf14f078be8e2)
