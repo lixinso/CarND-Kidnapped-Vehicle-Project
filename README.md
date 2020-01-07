@@ -22,6 +22,10 @@ cmake ..
 make
 ./particle_filter
 
+On Mac, run this command to tunnel to the server.
+ ssh -i ~/SSH_KEY_XXX -L 4567:localhost:4567 ubuntu@SERVER_IP_XXX
+(Note: The Udacity SDC Simulator doesn't work well inside Cloud VMs)
+
 Note that the programs that need to be written to accomplish the project are src/particle_filter.cpp, and particle_filter.h
 
 The program main.cpp has already been filled out, but feel free to modify it.
