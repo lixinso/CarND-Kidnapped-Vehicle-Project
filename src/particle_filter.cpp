@@ -74,6 +74,8 @@ void ParticleFilter::prediction(double delta_t, double std_pos[], double velocit
 
 	}
 
+        //TODO: Add Gaussian noise?
+
 }
 
 void ParticleFilter::dataAssociation(std::vector<LandmarkObs> predicted, std::vector<LandmarkObs>& observations) {
@@ -95,6 +97,7 @@ void ParticleFilter::dataAssociation(std::vector<LandmarkObs> predicted, std::ve
 
 }
 
+//TODO: explain it
 double multivariate_gaussian(double x, double y, double mu_x, double mu_y, double sig_x, double sig_y){
 	return exp(-(
 			(pow(x-mu_x,2) / (2 * pow(sig_x , 2)) +
@@ -154,7 +157,7 @@ void ParticleFilter::updateWeights(double sensor_range, double std_landmark[],
 				LandmarkObs obs = transformed_observations[j];
 				Map::single_landmark_s l = map_landmarks.landmark_list[obs.id - 1];
 				double weight = multivariate_gaussian(l.x_f, l.y_f, obs.x, obs.y, std_landmark[0], std_landmark[1]);
-				p.weight *= weight;
+				p.weight *= weight; //TODO: explain. Multiple, instead of single?
 			}
 		}else{
 			p.weight = 0;
